@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-DevcampViewTool::Renderer.copyright 'Xin Li', 'All rights reserved'
+XinCopyright::Renderer.copyright 'Xin Li', 'All rights reserved'
 ```
 
 ## Development
