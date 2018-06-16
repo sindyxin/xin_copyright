@@ -20,13 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
+###Example
+In our app/helpers/application_helper.rb :
 
 ```ruby
 def copyright_generator
     @footer = XinCopyright::Renderer.copyright 'Xin Li', 'All rights reserved'
 end
 ```
-
+In our layout/_application_footer.html.erb partial :
+<div class="mastfoot">
+    <p class="app-footer"><%= copyright_generator %></p>
+</div>
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
