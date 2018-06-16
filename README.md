@@ -20,8 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
+
 ```ruby
-XinCopyright::Renderer.copyright 'Xin Li', 'All rights reserved'
+def copyright_generator
+    @footer = XinCopyright::Renderer.copyright 'Xin Li', 'All rights reserved'
+end
 ```
 
 ## Development
